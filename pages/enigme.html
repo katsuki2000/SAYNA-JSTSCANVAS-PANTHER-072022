@@ -8,6 +8,22 @@
     <title>black panther | enigme</title>
 </head>
 <body>
+
+<!-- popup box -->
+<div class="box-popup" id="box-popup">
+    <div class="popup">
+        <p id="titre_popup">Ton initiation est terminée ! </p>
+        <a id="btn-popup"> Revenir à l'accueil</a>
+        <div class="chrono" id="chrono">
+            <img src="../assets/images/enigme/figma_logo.svg" alt="figma">
+            <p>
+                Coming soon <span id="hour">00:00:04</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- fin -->
+
     <header>    <!--le header-->
         <nav>
             <div class="header-icons">
@@ -15,7 +31,7 @@
                 <img src="../assets/images/all/icon_x.png" alt="icon_x">
                 <img src="../assets/images/all/icon_MARVEL.png" alt="icon_MARVEL">
             </div>
-            <ul>    <!--Le menu-->
+            <ul class="fade-in">    <!--Le menu-->
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="./wakanda.html">Wakanda</a></li>
                 <li><a href="#" class="active">Enigme</a></li>
@@ -24,7 +40,6 @@
     </header>
       
     <main>
-        <section id="okoye-section">
             <!--La barre verticale à gauche où il y a les logos des reseaux sociaux fb, instagram, twitter-->
             <div class="barre">
                 <div class="vertical-full"></div>
@@ -39,60 +54,70 @@
                 </div>
             </div>
 
-            <div class="okoye-image">
-                <div class="okoye-text">
-                    <h2>Releve le defi de doras milaje</h2>
-                   <div class="content"> 
-                        <p>Les Doras Milaje sont de farouches guerrières d'élite. Elles constituent la garde rapprochée du Roi en personne et ont de 
-                        nombreuses occasions de lui sauver la vie. Leur Générale, Okoye est également la dirigeante des forces armées et des renseignements wakandais.
-                        </p>
-                        <p>La réussite de cette évaluation ne dépend pas de la chance mais bel et bien de 
-                        l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi et 
-                        montre nous que tu es capable de porter les valeurs du Black Panther et du Wakanda !
-                        </p>
-                        <img src="../assets/images/enigme/Pantherenigme2.png" alt="Pantherenigme2">
-                     </div>   
-                    <div class="image">
-                        <img class="ligne" src="../assets/images/enigme/Pantherenigme3.png" alt="Pantherenigme3">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="crypted-text">
-            <h2 class="crypted-title">"SI JE SUIS  FIDELE C'EST A CE TRONE 
-                PEU IMPORTE QUI MONTE DESSUS"</h2>
-            <div class="display-div">
-                <div class="crypted-first">
-                    <p>Voici la transcription de l'alphabet:</p>
-                    <p class="alphabet">    <!--l'alphabet wakandais-->
-                        A = <span class="wakanda-transform">A</span> ; B =<span class="wakanda-transform">B</span> ; C = <span class="wakanda-transform">C</span>; D =<span class="wakanda-transform">D</span>; E = <span class="wakanda-transform">E</span>  ; F = <span class="wakanda-transform">F</span>; G = <span class="wakanda-transform">G</span> ; H = <span class="wakanda-transform">H</span> ; I = <span class="wakanda-transform">I</span> ; J = <span class="wakanda-transform">J</span> ;<br>
-                        K = <span class="wakanda-transform">K</span> ; L= <span class="wakanda-transform">L</span> ; M = <span class="wakanda-transform">E</span> ; N = <span class="wakanda-transform">N</span> ; O = <span class="wakanda-transform">O</span>  ; P = <span class="wakanda-transform">P</span> ; Q = <span class="wakanda-transform">Q</span>  ; R = <span class="wakanda-transform">R</span>  ; S = <span class="wakanda-transform">S</span>  ; T = <span class="wakanda-transform">T</span> ;<br>
-                        U = <span class="wakanda-transform">U</span>  ; W = <span class="wakanda-transform">W</span> ; X = <span class="wakanda-transform">X</span> ; Y = <span class="wakanda-transform">Y</span> ; Z = <span class="wakanda-transform">Z</span>   
+<!-- Section defi -->
+<section id="defi">
+    <div class="card-defi">
+        <h2 class="titre-defi fade-in">
+            Releve le defi des dora milaje
+        </h2>
+        <div class="texte-defi">
+            <div class="paragraphe">
+                <p class="fade-in">
+                    Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des renseignements
+                    wakandais.
+                </p>
+                <p class="fade-in">La réussite de cette évaluation ne dépend pas de la chance mais bel et bien de 
+                    l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi et 
+                    montre nous que tu es capable de porter les valeurs du Black Panther et du Wakanda !
                     </p>
-                    <form  class="reponse-form" action="/submit-form" method="post">    <!--La réponse au défi-->
-                        <label for="reponse">Alors, as-tu la réponse ?</label>
-                        <input id="reponse" name="reponse" type="text" placeholder="Réponse">
-                        <input class="btn" type="submit" value="Envoyer">
-                    </form>
-                </div>
-                <div class="after-crypted-text">
-                    <div class="last-p">
-                        <p>Le savais tu ? </p>
-                    <p>
-                        Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français   est 
-                        la lettre E. En pourcentage de fréquence, la lettre est utilisée  à 14% dans une 
-                        phrase. Et si tu regardais quel symbole revient le plus souvent ? </p>
+                   <img src="../assets/images/enigme/Pantherenigme3.png" width="20px" alt="">
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin section defi -->
+                        
+        <!-- section Enigme -->
+        <section id="enigme">
+            <div class="main-enigme">
+                <h2 class="entete" id="number_enigme"> ENIGME NUMERO i</h2>
+                <div class="content-enigme">
+                    <div class="transcription">
+                        <p id="enonce" class="fade-in">
+                            Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, et apprend par la même occasion la première valeur d’ une Dora Milaje!
+                        </p>
+                        <p id="enigme-text" class="fade-in">
+                            <span class="panthera-letter"> " SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS "</span>
+                        </p>
+                        <form action="" id="enigme-form">
+                            <label for="reponse" class="fade-in">Alors, as tu la réponse ?</label> <br>
+                            <input type="text" name="reponse" id="reponse" placeholder="Réponse" class="fade-in"> <br>
+                            <input type="submit" value="ENVOYER" class="btn btn-enigme">
+                        </form>
                     </div>
-                    <img src="../assets/images/enigme/Pantherenigme2.png" alt="">
+                    <div class="info-enigme">
+                        <p>
+                            <span class="titre-info">Le savais tu ? </span>
+                            <p id="a_savoir" class="fade-in">
+                                <span>Voici la transicription de l’alphabet :</span> <br>
+                                <span class="alphabet">
+                                    A = <span> A </span> ; B = <span> B </span>; C = <span> C </span> ; D = <span> D </span> ; E = <span> E </span> ; F = <span> F </span> ; G = <span> G </span> ; H = <span> H </span> ;
+                                I = <span> I </span> ; J = <span> J </span> ; K = <span> K </span> ; L = <span> L </span> ; M = <span> M </span> ; N = <span> N </span> ; O = <span> O </span> ; P = <span> P </span> ; Q = <span> Q </span> ; R = <span> R </span>                                ; S = <span> S </span> ; T =<span> T </span>; U = <span> U </span> ; W = <span> W </span> ; X = <span> X </span> ; Y = <span> Y </span> ; Z = <span> Z </span>
+                                </span>
+                            </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Fin section enigme -->
     </main>
     
     <footer>    <!--Enfin le footer!-->
             <!--sayna+panther!--> 
         <div class="marvel-side">
-            <a href="#">    
+            <a class="fade-in" href="#">    
                 <img class="sayna-footer" src="../assets/images/all/footer2.png" alt="">
             </a> 
         </div>
@@ -101,8 +126,8 @@
             <div class="social-side">
     <!--Les liens vers les autres pages!--> 
                 <div class="wakanda-page">
-                    <h2>Pages</h2>
-                    <ul>
+                    <h2 class="fade-in">Pages</h2>
+                    <ul class="fade-in">
                         <li><a href="../index.html"><p style="color:white; font-family: 'cantarell';">  Home</p></a> </li>
                         <li><a href="./wakanda.html"><p style="color:white; font-family: 'cantarell';"> Wakanda</p> </a> </li>
                         <li><a href="enigme.html"><p style="color:white; font-family: 'cantarell';"> Énigme</p> </a> </li>
@@ -111,7 +136,7 @@
 
                 <!--Logos Réseaux sociaux!--> 
                 <div class="social-icons">
-                    <h2>Retrouvez nous</h2>
+                    <h2 class="fade-in">Retrouvez nous</h2>
                     <div class="icon-container">
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="../assets/images/all/footer3.png" alt=""> </a>
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="../assets/images/all/footer4.png" alt=""> </a>
@@ -123,9 +148,12 @@
         
         <!--Droits d'auteur!--> 
             <div class="copyright">
-                <p>2023 Tous droits réservés <span class="span">.</span>Politique de confidentialité <span class="span">.</span>Condition d'utilisation</p>
+                <p class="fade-in">2023 Tous droits réservés <span class="span">.</span>Politique de confidentialité <span class="span">.</span>Condition d'utilisation</p>
             </div>
         </div>
     </footer>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/enigme.js"></script>
+
 </body>
 </html>
