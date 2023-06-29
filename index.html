@@ -8,6 +8,7 @@
     <title>black panther | accueil</title>
 </head>
 <body>
+ 
     <!--Le header-->
     <header>
         <nav>
@@ -18,7 +19,7 @@
                 <img src="assets/images/all/icon_MARVEL.png" alt="icon_MARVEL">
             </div>
                 <!--le menu-->
-            <ul>
+            <ul class="fade-in">
                 <li><a href="#" class="active">Accueil</a></li>
                 <li><a href="pages/wakanda.html">Wakanda</a></li>
                 <li><a href="pages/enigme.html">Enigme</a></li>
@@ -125,26 +126,36 @@
                 <div class="slide slide8">
                     <div class="leftcard"><img class="fade-in" src="assets/images/accueil/Pantherhome_slider_8.png" alt="" width="100%" height="auto"></div>
                     <div class="Rightcard">
-                        <h1 class="fade-in">OKOYE</h1>
-                        <p class="fade-in">Okoye est le général des Dora Milaje (groupe d’élite de femmes guerrières) et le chef des forces armées et des renseignements wakandais. Témoin du couronnement de T'Challa, elle se joint à lui dans de nombreuses aventures.</p>
-                        <a class="fade-in" href="">Voir plus ></a>
-                    </div>
-                </div>
-                <div class="slide slide9">
-                    <div class="leftcard"><img class="fade-in" src="assets/images/accueil/Pantherhome_slider_9.png" alt="" width="100%" height="auto"></div>
-                    <div class="Rightcard">
                         <h1 class="fade-in">ZURI</h1>
                         <p class="fade-in">Zuri était un ancien membre des Chiens de Guerre et un shaman Wakandais, loyal conseiller de son Roi. Après avoir gardé les secrets de T'Chaka à propos de sa gestion de la mort de N'Jobu dans le passé, Zuri continua à soutenir
                             le Roi du Wakanda alors que T'Challa reprenait le trône.</p>
                         <a class="fade-in" href="">Voir plus ></a>
                     </div>
                 </div>
+                <div class="slide slide9">
+                    <div class="leftcard"><img class="fade-in" src="assets/images/accueil/Pantherhome_slider_9.png" alt="" width="100%" height="auto"></div>
+                    <div class="Rightcard">
+                        <h1 class="fade-in">EVERETT KENNETH ROSS</h1>
+                        <p class="fade-in">
+                            L'Agent Everett Ross est un agent de la CIA et un ancien 
+                            Commissaire Exécutif à l'Antiterrorisme pour la Force 
+                            Conjointe AntiTerroriste. Après avoir quitté la Force Conjointe 
+                            AntiTerroriste, Ross fut chargé de traquer et neutraliser 
+                            Ulysses Klaue, ce qui plaça Ross sur le chemin de Black 
+                            Panther, qui cherchait à capturer de nouveau Klaue pour ses 
+                            crimes passés</p>
+                        <a class="fade-in" href="">Voir plus ></a>
+                    </div>
+                </div>
                 <div class="slide slide10">
                     <div class="leftcard"><img class="fade-in" src="assets/images/accueil/Pantherhome_slider_10.png" alt="" width="100%" height="auto"></div>
                     <div class="Rightcard">
-                        <h1 class="fade-in">EVERETT KENNETH ROSS</h1>
-                        <p class="fade-in">L'Agent Everett Ross est un agent de la CIA et un ancien Commissaire Exécutif à l'Antiterrorisme pour la Force Conjointe AntiTerroriste. Après avoir quitté la Force Conjointe AntiTerroriste, Ross fut chargé de traquer et neutraliser
-                            Ulysses Klaue, ce qui plaça Ross sur le chemin de Black Panther, qui cherchait à capturer de nouveau Klaue pour ses crimes passés.</p>
+                        <h1 class="fade-in">ULYSSE KLAUE</h1>
+                        <p class="fade-in">Ulysses Klaue est un criminel international, gangster et vendeur 
+                            d'armes sur le marché noir. En 1992, il collabora avec N'Jobu afin 
+                            de voler une quantité importante de vibranium au Wakanda. Bien 
+                            qu'il soit parvenu à voler et à s'échapper avec un stock important, il 
+                            reçut une marque sur le cou de la part des Wakandais.</p>
                         <a class="fade-in" href="">Voir plus ></a>
                     </div>
                 </div>
@@ -236,13 +247,13 @@
 
                 <div class="tchalla">   <!--La partie à droite avec la biographie de black panther-->
                     <div class="background">
-                        <img class="fade-in" src="assets/images/accueil/Pantherhome5.png" alt="">
+                        <img class="fade-in" src="assets/images/accueil/Pantherhome5.png" alt="" id="tchalla">
                         <div class="front-face">
                             <h3 class="fade-in">T'Challa</h3>
                             <div class="buttons">
-                                <button>Black Panther</button>
-                                <button>Roi du Wakanda</button>
-                                <button>En vie</button>
+                                <button class="fade-in">Black Panther</button>
+                                <button class="fade-in">Roi du Wakanda</button>
+                                <button class="fade-in">En vie</button>
                             </div>
                             <div class="bio">
                                 <p class="fade-in">Acteur: <span class="bold">Chandwick Boseman</span></p>
@@ -256,7 +267,7 @@
                         </div>
                     </div>
                     <div class="tchalla-poster">
-                        <img class="fade-in" src="assets/images/accueil/Pantherhome6.png" alt="Pantherhome6">
+                        <img class="fade-in" src="assets/images/accueil/Pantherhome6.png" alt="Pantherhome6" id="img-panther">
                     </div>
                 </div>
             </div>
@@ -264,14 +275,28 @@
 
         <section class="form-section"> <!--Le formulaire -->
             <div class="displayForm">
-                <form class="formLogin" action="/submit-form" method="post">
+                <form class="formLogin" method="post">
                     <p class="fade-in">Besoin de l'intervention du Wakanda ?</p>
                     <h3 class="fade-in">Contactez nous</h3>
-                    <input class="input" type="text" placeholder="Nom" required >
-                    <input class="input" type="email" placeholder="Email">
-                    <textarea class="input" cols="30" rows="10" placeholder="Message"></textarea>
-                    <input class="btn" type="submit" value="Envoyer">
+                    <div class="fade-in">
+                        <input class="input" type="text" placeholder="Nom" id="name" required >
+                        <input class="input" type="email" placeholder="Email" id="email">
+                        <textarea class="input" cols="30" rows="10" placeholder="Message" id="message"></textarea>
+                        <input class="btn" id="open" type="submit" value="Envoyer">
+                    </div>
                 </form>
+
+                <!--Le popup -->
+                <div class="popup-container" id="popup-container">
+                    <div class="popup">
+                        <button id="close">
+                            &times;
+                        </button>
+                        <p>
+                            message reçu !
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -299,7 +324,7 @@
                 <!--Logos Réseaux sociaux!--> 
                 <div class="social-icons">
                     <h2 class="fade-in">Retrouvez nous</h2>
-                    <div class="icon-container">
+                    <div class="icon-container fade-in">
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img class="fade-in" src="assets/images/all/footer3.png" alt=""> </a>
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img class="fade-in" src="assets/images/all/footer4.png" alt=""> </a>
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img class="fade-in" src="assets/images/all/footer5.png" alt=""> </a>
@@ -316,5 +341,6 @@
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 </html>
