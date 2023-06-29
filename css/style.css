@@ -40,6 +40,67 @@ body {
   background-size: cover;
 }
 
+
+
+/* POPUP */
+.popup-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #021740;
+  opacity: .9;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.popup-container.active {
+  display: flex;
+}
+.popup {
+  background: linear-gradient(#07338C,
+  #3D2DA6);
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.popup button {
+  position: absolute;
+  top: .625rem;
+  right: .625rem;
+  background-color: inherit;
+  font-size: 1.5rem;
+  opacity: .5;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 2rem;
+  height: 1.7rem;
+  border-radius: 0px;
+
+}
+.popup p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  .box-popup {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+  }
+}
+/* FIN POPUP  */
+
 /*Design du header*/
 header .header-icons {
   margin: 20px 40px;
@@ -223,7 +284,7 @@ main #panther-section{
   flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
-  background-color: #07338C;
+  background-color: var(--sixthcolor);
   width: 520px;
   height: 280px;
 }
@@ -372,7 +433,7 @@ main .form-section .displayForm .formLogin h3{
   margin: 0;
   font-family: 'cantarell';
   font-weight: bold;
-  font-size: 36px;
+  font-size: 16px;
 }
 main .form-section .displayForm .formLogin p{
   margin: 0;
@@ -475,7 +536,7 @@ footer .footer .social-side .social-icons .icon-container img:hover {
 footer .footer .copyright {
   text-decoration: none;
   font-family: "cantarell";
-  font-size: 14px;
+  font-size: 10px;
   color: var(--whitecolor);
   align-items: center;
   margin-top: 100px;
@@ -511,4 +572,13 @@ footer .footer .social-side .social-icons {
   footer .footer .copyright {
     margin-top: 10px;
   }
+}
+
+/*CANVA*/
+#div-canvas {
+  z-index: 2;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
 }
