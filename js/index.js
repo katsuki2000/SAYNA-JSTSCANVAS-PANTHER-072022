@@ -1,4 +1,18 @@
 
+// popup
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const popupContainer = document.getElementById('popup-container');
+
+open.addEventListener('click', () => {
+    popupContainer.classList.add('active');
+});
+close.addEventListener('click', () => {
+    popupContainer.classList.remove('active');
+});
+
+
+
 // fadeIn
 window.addEventListener('scroll', reveal)
 
@@ -21,16 +35,15 @@ function reveal() {
 
 
 
-
-
 $(document).ready(function() {
+
     // slide des lignes et reseaux sociaux
     $(".barre").hide();
     setTimeout(() => {
         $(".barre").slideDown(5000);
     }, 2000);
 
-    // zomm des h1, h et t'challa
+    // zomm des h1, h2
     $("h1").mouseover(function() {
         $(this).css("transform", "scale(1.2)");
     });
@@ -43,11 +56,22 @@ $(document).ready(function() {
     $("h2").mouseleave(function() {
         $(this).css("transform", "scale(1)");
     });
-    $(".t'challa").mouseover(function() {
+    
+    // effet zoom image wakanda
+    $(".tchalla").mouseover(function() {
         $(this).css("transform", "scale(1.2)");
     });
-    $(".t'challa").mouseleave(function() {
+    $(".tchalla").mouseleave(function() {
         $(this).css("transform", "scale(1)");
+    });
+
+    $("#img-panther").on({
+        mouseenter: function() {
+            $(this).animate({ width: '+=10%', });
+        },
+        mouseleave: function() {
+            $(this).animate({ width: '-=10%', });
+        },
     });
 });
 
