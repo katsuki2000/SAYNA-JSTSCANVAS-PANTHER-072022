@@ -1,160 +1,236 @@
 @import url('./style.css');
 
-/* Design de la section Okoye */
-main #okoye-section {
+
+/* POPUP BOX  */
+.box-popup {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #3D2DA6 10%, #021740 100%);
 }
-
-main #okoye-section .okoye-image {
-  background-image: url('../assets/images/enigme/Pantherenigme1.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-}
-
-main #okoye-section .okoye-text {
-  width: 600px;
-  text-align: justify;
-  float: right;
-  margin-top: 200px;
+.box-popup .popup {
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
-}
-
-main #okoye-section .okoye-text h2 {
-  font-size: 43px;
-}
-
-main #okoye-section .okoye-text p {
-  width: 350px;
-  color: var(--whitecolor);
-  font-family: 'cantarell';
-  font-size: 13.5px;
-  margin-top: 100px;
-  margin-left: 150px;
-}
-
-.content p {
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-main #okoye-section .okoye-text img {
-  position: relative;
-  width: 600px;
-  /* margin-left: -100px; */
-  margin-top: -280px;
-}
-
-main .crypted-text {
-  margin: 100px;
-}
-
-main .image {
-  display: block;
-  position: relative;
-  margin-bottom: -400px;
-}
-
-main .crypted-text .crypted-title {
-  width: 70%;
-  font-family: 'wakandaforever';
-}
-
-main .crypted-text .display-div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-main .crypted-text .display-div p {
-  font-family: 'cantarell';
-  color: var(--whitecolor);
-}
-
-main .crypted-text .display-div .alphabet {
-  text-transform: uppercase;
-  width: 120%;
-}
-
-main .crypted-text div {
-  width: 45%;
-}
-
-main .crypted-text .after-crypted-text {
-  margin-top: 200px;
-}
-
-main .crypted-text .after-crypted-text .last-p {
-  position: relative;
+  align-items: center;
+  justify-content: center;
   width: 80%;
-  text-align: center;
-  font-size: 12px;
-  margin: 0 auto;
+  height: 80%;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #9E91B7 30%, #3D2DA6 100%);
 }
-
-main .crypted-text .display-div img {
-  margin-top: -50%;
-  position: relative;
-  width: 120%;
-  /* margin-left: -50px; */
-  transform: rotate(5deg);
+.box-popup .popup p {
+  text-transform: uppercase;
+  font-family: "cantarell";
+  font-size: 20px;
 }
-
-main .crypted-text .reponse-form {
-  margin-top: 150px;
+.box-popup .popup a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--viloet-tertiaire);
+  background-color: var(--first-color);
+  border-radius: 25px;
+  padding: 15px 20px;
+  margin: 50px 0px;
+}
+.box-popup .popup .chrono {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.box-popup .popup .chrono #hour {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .box-popup {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+  }
+}
+/* FIN POPUP  */
+
+
+
+/* FEUILLE DE STYLE SPECIALEMENT POUR LA PAGE ENIGME */
+/* Proprieté globale */
+p,
+label {
+  font-size: 14px;
+  margin: 20px 0px;
+  color: white;
+}
+
+/* FIN propriete global */
+/* Propriété CSS section defi */
+#defi {
+  background-image: url("../assets/images/enigme/Pantherenigme1.png");
+  background-size: 75%;
+  background-position: bottom left -20%;
+  background-repeat: no-repeat;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+#defi .card-defi {
+  width: 650px;
+}
+#defi .card-defi .titre-defi {
+  font-size: 54px;
+  text-align: justify;
+  width: 550px;
+  margin: 45px 10px;
+  letter-spacing: 0.09em;
+}
+#defi .card-defi .texte-defi .paragraphe {
+  background-image: url("../assets/images/enigme/Pantherenigme2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 385px;
+  width: 95%;
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  text-align: justify;
+  justify-content: center;
 }
-
-main .crypted-text .reponse-form label {
-  color: var(--firstcolor);
-  font-family: 'cantarell';
-}
-
-main .crypted-text .reponse-form input {
-  margin-top: 20px;
-}
-
-main .crypted-text #reponse {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--firstcolor);
-  border-radius: 38px;
-  background-color: transparent;
-}
-
-main .crypted-text #reponse::placeholder {
-  color: var(--firstcolor);
-  font-family: 'cantarell';
+#defi .card-defi .texte-defi .paragraphe p {
+  width: 70%;
   font-size: 11px;
 }
 
-main .crypted-text .reponse-form .btn {
-  margin-top: 80px;
-  width: 30%;
-  padding: 10px;
-  align-self: center;
-  border: none;
-  color: var(--whitecolor);
+/* Propriété css section Enigme */
+.main-enigme {
+  margin-left: 15%;
+}
+.main-enigme .entete {
+  text-decoration: underline;
+  letter-spacing: 0.25em;
+  line-height: 50px;
+}
+.main-enigme .content-enigme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.main-enigme .content-enigme .info-enigme {
+  background-image: url("../assets/images/enigme/Pantherenigme2_1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 385px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-enigme .content-enigme .info-enigme p {
+  width: 70%;
+  font-size: 11px;
+  margin: 2px auto;
+}
+.main-enigme .content-enigme .info-enigme p .titre-info {
+  display: block;
+  text-align: center;
+}
+
+.alphabet span {
+  font-family: "wakandaforever" !important;
+}
+
+.transcription {
+  width: 500px;
+}
+.transcription .panthera-letter {
+  font-family: "wakandaforever";
+  font-size: 28px;
+  color: var(--second-color);
+  line-height: 40px;
+}
+.transcription form {
+  margin-top: 50px;
+}
+.transcription form input[type=text] {
+  width: 520px;
+  height: 56px;
+  border: 1px solid #DF99F2;
   border-radius: 38px;
-  background-color: var(--thirdcolor);
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: 'cantarell';
+  padding-left: 30px;
+  margin: 20px 0px;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--first-color);
+}
+.transcription form .btn-enigme {
+  margin-left: 180px;
+  margin-top: 50px;
 }
 
-main .crypted-text .reponse-form .btn:hover {
-  box-shadow: 2px 2px 20px var(--firstcolor);
-  filter: blur(20%);
+@media (max-width: 800px) {
+  /* DEFINIR LES PROPRIETEs RESPONSIVES A PARTIR D'ECRAN DE 800PX */
+  #defi {
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    margin: 100px 0px;
+    justify-content: center;
+  }
+  #defi .card-defi {
+    width: 90%;
+    margin: 0;
+  }
+  #defi .card-defi .titre-defi {
+    font-size: 48px;
+    width: auto;
+    text-align: center;
+    margin: auto;
+  }
+  #defi .card-defi .titre-defi .paragraphe {
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    width: 100%;
+  }
+  .main-enigme {
+    margin-left: 0%;
+  }
+  .main-enigme .entete {
+    letter-spacing: 0.25em;
+    width: 100%;
+    text-align: center;
+  }
+  .main-enigme .content-enigme {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+  .main-enigme .content-enigme .info-enigme {
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+  }
+  .transcription {
+    width: 90%;
+    margin: auto;
+  }
+  .transcription form {
+    margin-top: 50px;
+  }
+  .transcription form input[type=text] {
+    width: 100%;
+    padding: 0;
+  }
+  .transcription form .btn-enigme {
+    margin: auto;
+  }
 }
-
-main section .wakanda-transform {
-  font-family: 'wakandaforever';
-  text-transform: uppercase;
-  font-size: 22px;
-}
-
